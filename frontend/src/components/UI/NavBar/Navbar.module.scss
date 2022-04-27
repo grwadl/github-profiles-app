@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+.Wrapper{
+    border-bottom:2px solid #8B54FF;
+    height: 70px;
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    z-index: 2;
+    .navWrapper{
+        max-width: 1430px;
+        padding: 0 15px;
+        margin: 13px auto 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        button{
+            padding: 10px;
+        }
+        a{
+            font-family: 'Inter', sans-serif;
+            text-decoration: none;
+            transition-duration: .3s;   
+            margin-right: 20px;
+            &:hover{
+                color:darken($color: white, $amount: 30);
+                transition-duration: .3s;
+            }
+        }
+        img{
+            height: 44px;
+            margin-right: 20px;
+        }
+        .navLogo{
+            font-family: 'Inter', sans-serif;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+        }
+        
+    }
+    .navItems{
+        display: flex;
+        align-items: center;
+        img:hover{
+            cursor: pointer;
+        }
+    }
+}
+.darkTheme{
+    background-color: #121212;
+}
+.lightTheme{
+    background: #fff;
+}
+@media (max-width:648px) {
+    .navItems{
+        transform: translate(0,-300%);
+    }
+    .openedMenu.navItems{
+        transform: translate(0,0);
+    }
+    .navLogo{
+        font-size: 18px!important;
+    }
+    .Wrapper.active{
+        position: fixed;
+        top:0;
+        left:0;
+        height: 100%;
+        width: 100%;
+        .navWrapper{
+            display: block;
+            .navItems{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                a{
+                    
+                    display: block;
+                    text-align: center;
+                    margin: 40px auto 0 auto;
+                    font-size: 32px;
+                }
+                img{
+                    display: block;
+                    margin: 90px auto 0 auto;
+                    height: 60px;
+                    text-align: center;
+                }
+                button{
+                    margin-top: 40px!important;
+                }
+            }
+        }
+    }
+}

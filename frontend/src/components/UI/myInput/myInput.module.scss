@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Padauk&display=swap');
+.myInputWrapper{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 42px;
+    .myLabel{
+        display: block;
+        font-size: 15px;
+        transform-origin: 0 0;
+        transition-duration: .3s;
+        font-family: 'Inter', sans-serif;
+        pointer-events: none;
+        border-radius:5px;
+        transform: translateY(-2.2em);
+        margin-left: 22px;
+    }
+    .myDarkLabel{
+        color:white;
+        padding: 0 6px;
+        background: #121212;
+    }
+    .myLightLabel{
+        color:#121212;
+        background: white;
+        padding: 0 6px;
+    }
+    max-width: 352px;
+    .myInput{
+        display: block;
+        border: 2px solid #6066FF;
+        border-radius: 20px;
+        flex:0 1 100%;  
+        background: #121212;
+        color:white;
+        padding: 12px 22px;
+        font-size: 15px;
+        color:white;
+        font-family: 'Inter', sans-serif;
+        &::placeholder{
+            opacity: 0;
+        }
+    }
+}
+.myLightInput{
+    background: #fff!important;
+    color:black!important;
+}
+.myDarkInput{
+    background: #121212;
+    color:white
+}
+.myInputWrapper input:focus + .myLabel, input:not(:placeholder-shown) + .myLabel{
+    transform: translateY(-3.8em);
+    transition-duration: .3s;
+  }
+  .myInputWrapper input:focus{
+      outline: 1.5px solid #6066FF;
+      transition-duration: .3s;
+  }

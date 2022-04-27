@@ -1,0 +1,28 @@
+.profileInfo{
+    display: flex;
+    .profilePhoto{
+        flex: 0 1 10%;
+        img{
+           max-height: 200px;
+            text-align: left;
+            margin-right: 50px;
+        }
+    }
+    .profileGeneralInfo
+    {
+        flex:0 1 90%;
+
+        .item{
+            margin-top: 15px;
+            text-align: left;
+            font-size: 18px;
+        }
+        
+    }
+    @media (max-width:648px) {
+        display: block;
+        img{
+            margin-right: 0!important;
+        }
+    }
+}

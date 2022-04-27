@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Padauk&display=swap');
+.regWrapper{
+    max-width: 400px;
+    min-height: 318px;
+    border: 2px solid #8B54FF;
+    border-radius: 20px;
+    margin: 10% auto 0 auto;
+    @media (max-width:548px) {
+        border:0;
+        margin-top: 80px;
+        padding: 0 15px;
+        .error{
+            font-size: 12px!important;
+            bottom: 0!important;
+    }
+    .title{
+        padding-bottom: 20px!important;
+    }
+    }
+    .regContainer{
+        max-width: 352px;
+        margin: 29px auto 84px auto;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .title{
+            font-family: 'Inter';
+            text-align: center;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 44px;
+            line-height: 53px;
+            flex:0 1 100%;
+            padding: 29px 0 48px 0;
+        }
+        .inputWrapper{
+            flex:0 1 100%;
+            position: relative;
+            margin-bottom: 10px;
+            input{
+                width:100%;
+            }
+            .error{
+                position: absolute;
+                bottom:2px;
+                color: rgb(142, 31, 31);
+                font-size: 14px;
+                font-family: 'Inter';
+                right:16px;
+            }
+        }
+        button{
+           flex:0 1 275px;
+           margin-top: 22px;
+           transition-duration: .3s;
+        }
+        a{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 18px;
+            flex:0 1 100%;
+            text-align: center;
+            margin-top: 30px;
+            text-decoration: none;
+            
+        }
+    }
+    .errorBlock{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            margin-top: 30px;
+            color: rgb(142, 31, 31);
+    }
+    
+}

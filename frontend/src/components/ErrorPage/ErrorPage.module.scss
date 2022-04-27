@@ -1,0 +1,14 @@
+.errorImage{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 70px;
+    max-height: 380px;
+    margin-bottom: 20px;
+    @media (max-width:648px) {
+        
+        font-size: 18px;
+        }
+        @media (max-width:300px) {
+            max-width: 200px;
+        }
+}

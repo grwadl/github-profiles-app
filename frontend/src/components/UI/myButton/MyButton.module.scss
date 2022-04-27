@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Padauk&display=swap');
+.MyButton{
+    background: #8B54FF;
+    border: 2px solid #9CA6FF;
+    box-sizing: border-box;
+    border-radius: 20px;
+    text-align: center;
+    padding: 12px 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition-duration: .3s;
+    &:hover{
+
+        background-color: #9CA6FF;
+        transition-duration: .3s;
+    }
+    &:disabled
+    {
+        cursor:no-drop;
+        background: #5b5a5c;
+        
+    }
+    &:hover:disabled{
+        background: #5b5a5c;
+    }
+}

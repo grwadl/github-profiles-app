@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Padauk&display=swap');
+.recentlyItem{
+    border: 2px solid #8B54FF;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    text-align: center;
+    margin: 0 30px 30px 20px;
+    transition-duration: .3s;
+    cursor: pointer;
+    &:hover{
+        background:#8B54FF;
+        transition-duration: .3s;
+    }
+    @media (max-width:648px) {
+        display: block;
+    }
+}

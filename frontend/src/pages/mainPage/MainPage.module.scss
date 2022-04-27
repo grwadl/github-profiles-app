@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Padauk&display=swap');
+.MainPage{
+    .MainPageWrapper{
+        max-width: 730px;
+        padding: 0 15px;
+        margin: 0 auto 30px auto;
+        padding-top: 40px;
+        flex-wrap: wrap;
+        .MainPageSearchBar{
+            display: flex;
+            flex-wrap: wrap;
+            flex:0 1 100%;
+            justify-content: center;
+            margin-top: 30px;
+            position: relative;
+            @media (max-width:648px) {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                button{
+                    margin-top: 20px;
+                }
+            }
+            button{
+                display: flex;
+                align-items: center;
+                padding: 0 20px;
+                height: 45px;
+                margin-left: 10px;
+                
+            }
+            
+        }
+        .SearchbarTitle{
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 32px;
+            text-align: center;
+            margin-top: 70px;
+           
+        }
+        .errorBlock{
+            font-family: 'Inter';
+            justify-self: flex-start;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            margin-top: 10px;
+            color: rgb(142, 31, 31);
+            flex:0 1 100%;
+            text-align: center;
+            margin-left: -90px;
+            @media (max-width:648px) {
+                margin-left: 20px;
+            }
+    }
+    }
+}

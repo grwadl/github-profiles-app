@@ -1,0 +1,23 @@
+.searchClear{
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 32px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex:0 1 480px;
+    padding-bottom: 40px;
+    .imgClear{ 
+        display: block;
+        max-width: 480px;
+        @media (max-width:300px) {
+            flex:0 1 200px;
+        }
+    }
+    @media (max-width:648px) {
+    font-size: 18px;
+    }
+}
