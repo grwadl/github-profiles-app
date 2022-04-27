@@ -5,10 +5,10 @@ const Searched = require('../models/Searched');
 router.post('/add', async (req, res) => {
     try {
         const { userId, searchedLogin } = req.body;
-        const isUsed = await Searched.findOne({ owner: searchedLogin });
+        const isUsed = await Searched.findOne({ author:userId,owner: searchedLogin });
         if (isUsed)
         {
-            await Searched.findOneAndUpdate({ owner: searchedLogin }, { date: new Date() });
+            await Searched.findOneAndUpdate({ author:userId,owner: searchedLogin }, { date: new Date() });
             return res.status(200).json({ message: 'search updated' });
             }
         const search = new Searched({ author: userId, owner: searchedLogin, date: new Date() });
